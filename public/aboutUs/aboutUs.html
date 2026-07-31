@@ -1,0 +1,624 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>RenArc Group</title>
+    <link rel="stylesheet" href="../../global/global.css" />
+    <link rel="stylesheet" href="aboutUs.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+    <!--Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+  </head>
+  <body>
+    <section id="navbar">
+      <nav class="navbar navbar-expand-lg navbarbg fixed-top px-5 navbar-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="../../index.html">
+            <img
+              src="../../images/logo.png"
+              alt=""
+              height="100px"
+              width="100px"
+            />
+          </a>
+
+          <!-- Right-side section -->
+          <div class="ms-auto d-flex align-items-center gap-3 no-wrap-navbar">
+            <!-- Phone Number (large screens only) -->
+            <p
+              class="mb-0 d-none d-lg-flex align-items-center gap-1 text-light pt-2"
+            >
+              <i class="bi bi-telephone text-light"></i> +1 (728)-777-2517
+            </p>
+
+            <!-- Schedule Now button -->
+            <a
+              href="../form/form.html"
+              class="btn text-gold mt-2 px-4 py-2 fw-bold hover-bounce schedule-btn-nav"
+              >Schedule Now</a
+            >
+
+            <!-- Dropdown -->
+            <div class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle text-light"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="32"
+                  height="32"
+                  fill="currentColor"
+                  class="bi bi-list"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"
+                  />
+                </svg>
+              </a>
+              <ul class="dropdown-menu dropdown-menu-end navbarbg">
+                <li>
+                  <a class="dropdown-item text-light" href="../../index.html"
+                    >Home</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item text-light"
+                    href="../aboutUs/aboutUs.html"
+                    >Who we are</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item text-light"
+                    href="../projects/projects.html"
+                    >What we do</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item text-light"
+                    href="../ourServices/services.html"
+                    >What we offer</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item text-light"
+                    href="../careers/careers.html"
+                    >Careers</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item text-light"
+                    href="../contact/contact.html"
+                    >Contact</a
+                  >
+                </li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item text-light" href="../form/form.html"
+                    >Schedule Now</a
+                  >
+                </li>
+
+                <!-- Phone Number in dropdown (only small screens) -->
+                <li class="d-lg-none px-3 py-2 text-light">
+                  <i class="bi bi-telephone text-light"></i> +1 (728)-777-2517
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </section>
+
+    <section id="head">
+      <div
+        class="hero-section text-white d-flex align-items-center"
+        style="
+          min-height: 90vh;
+          background: linear-gradient(
+                to right,
+                rgba(0, 0, 0, 0.7),
+                rgba(0, 0, 0, 0)
+              )
+              center center / cover no-repeat,
+            url('../../images/homeimage.jpg') center center / cover no-repeat;
+        "
+      >
+        <div class="container px-3 px-sm-4 px-lg-5">
+          <div class="row">
+            <div class="col-lg-6 px-3 px-sm-4 px-md-5">
+              <h1 class="display-6 display-md-5 lh-1 mb-3">Who we are</h1>
+              <p class="lead fs-6 fs-md-5">
+                At RenArc Group, we believe every space should be a true
+                reflection of its owner, crafted with care, precision, and
+                purpose. Founded on the principles of integrity, quality, and
+                respect for your vision, we are your trusted partner in creating
+                homes and environments that stand the test of time.
+              </p>
+              <p class="lead fs-6 fs-md-5">
+                From concept to completion, we deliver quality and
+                professionalism in every layer, ensuring excellence in both
+                design and execution. We understand that renovating or designing
+                a space is more than a project; it’s a personal journey. That’s
+                why we prioritize clear communication, collaboration, and
+                respect at every step.
+              </p>
+              <p class="lead fs-6 fs-md-5">
+                Driven by your vision, we build with clarity and expert
+                execution, ensuring every space we create is both beautiful and
+                functional. We respect your time and ours, which is why timely
+                delivery is at the heart of everything we do. Whether you’re
+                updating a single room or embarking on a full-scale
+                architectural transformation, RenArc Group is committed to
+                turning your ideas into reality with care, expertise, and prompt
+                project completion.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="leadership">
+      <div class="px-4 py-5 my-5 text-md-start">
+        <div class="col-lg-6 mx-auto">
+          <h1 class="display-5 golden-text">
+            Driven by experience to deliver the commitment you expect
+          </h1>
+          <hr class="custom-divider-green" />
+          <p class="lead mb-4">
+            RenArc’s management team combines extensive industry knowledge with
+            hands-on experience and a deeply personal approach. We lead each
+            project with clear communication, strategic oversight, and a
+            commitment to fostering trust and collaboration. Our management
+            philosophy goes beyond delivering skilled craftsmanship and timely
+            completion — we prioritize understanding your vision and ensuring
+            that every decision supports creating a space where you truly feel
+            at home. Through careful planning and attentive leadership, we
+            deliver environments that are both functional and welcoming,
+            tailored to your lifestyle and needs.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="values">
+      <div class="container">
+        <div class="row py-5 values-bg" style="border-radius: 1rem">
+          <div class="col-12 text-center mb-4">
+            <h2 class="display-5 fw-bold">Our Values</h2>
+            <p class="lead">
+              Guided by our values of
+              <span class="golden-text">integrity</span>,
+              <span class="golden-text">quality</span>,
+              <span class="golden-text">punctuality</span>, and
+              <span class="golden-text">collaboration</span>, we build trust
+              through keeping our promises, deliver excellence from concept to
+              completion, honor your time by meeting every deadline, and create
+              with care and clarity, driven by your vision.
+            </p>
+          </div>
+
+          <div class="col-md-3 text-center mb-4 mb-md-0">
+            <div class="icon-box mb-3">
+              <i
+                class="bi bi-shield-fill-check"
+                style="font-size: 2rem; color: #d4af37"
+              ></i>
+            </div>
+            <h4>Integrity</h4>
+            <p>
+              We build confidence by honoring our commitments with honesty and
+              transparency.
+            </p>
+          </div>
+
+          <div class="col-md-3 text-center mb-4 mb-md-0">
+            <div class="icon-box mb-3">
+              <i
+                class="bi bi-stars"
+                style="font-size: 2rem; color: #d4af37"
+              ></i>
+            </div>
+            <h4>Quality</h4>
+            <p>
+              We deliver superior quality and professionalism in every detail,
+              from concept to completion.
+            </p>
+          </div>
+
+          <div class="col-md-3 text-center mb-4 mb-md-0">
+            <div class="icon-box mb-3">
+              <i
+                class="bi bi-alarm-fill"
+                style="font-size: 2rem; color: #d4af37"
+              ></i>
+            </div>
+            <h4>Punctuality</h4>
+            <p>
+              We respect your time by consistently meeting deadlines and
+              ensuring timely delivery.
+            </p>
+          </div>
+
+          <div class="col-md-3 text-center">
+            <div class="icon-box mb-3">
+              <i
+                class="bi bi-people-fill"
+                style="font-size: 2rem; color: #d4af37"
+              ></i>
+            </div>
+            <h4>Collaboration</h4>
+            <p>
+              We create spaces with care, clarity, and purpose driven by your
+              vision.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="whyUs">
+      <div class="px-4 py-5 my-5 text-md-start">
+        <div class="col-lg-6 mx-auto">
+          <h1 class="display-5 golden-text">Why choose RenArc Group?</h1>
+          <hr class="custom-divider-green" />
+          <p class="lead mb-0">
+            We don’t just build spaces, we build trust. With strong integrity,
+            consistent quality, and a clear commitment to timely execution, we
+            deliver exceptional results that exceed expectations. Our
+            collaborative approach ensures your vision is at the heart of every
+            decision, while our transparent communication keeps you informed and
+            confident throughout the process. Choose RenArc Group for precision,
+            professionalism, and a seamless experience for every project, every
+            time.
+          </p>
+        </div>
+      </div>
+      <div
+        class="container-fluid d-flex justify-content-center align-items-center"
+      >
+        <div class="row w-100 justify-content-center g-0">
+          <!-- Card 1 -->
+          <div class="col-md-4 d-flex justify-content-center">
+            <div class="flip-card">
+              <div class="flip-card-inner">
+                <div class="flip-card-front">
+                  <div class="icon-box-big mb-5">
+                    <i
+                      class="fas fa-handshake"
+                      style="font-size: 4rem; color: #d4af37"
+                    ></i>
+                  </div>
+                  <h3 class="text-center text-light">
+                    Client-Centered Collaboration
+                  </h3>
+                </div>
+                <div class="flip-card-back">
+                  <i class="bi bi-quote quote-icon"></i>
+                  <p>
+                    Your vision leads the way. We listen closely and work with
+                    you at every step to ensure your space feels truly yours.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="col-md-4 d-flex justify-content-center">
+            <div class="flip-card">
+              <div class="flip-card-inner">
+                <div class="flip-card-front">
+                  <div class="icon-box-big mb-5">
+                    <i
+                      class="fas fa-users"
+                      style="font-size: 4rem; color: #d4af37"
+                    ></i>
+                  </div>
+                  <h3 class="text-center text-light">Quality Craftsmanship</h3>
+                </div>
+                <div class="flip-card-back">
+                  <i class="bi bi-quote quote-icon"></i>
+                  <p>
+                    We deliver consistent, high-quality results with attention
+                    to detail in every job.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="col-md-4 d-flex justify-content-center">
+            <div class="flip-card">
+              <div class="flip-card-inner">
+                <div class="flip-card-front">
+                  <div class="icon-box-big mb-5">
+                    <i
+                      class="fas fa-shield-alt"
+                      style="font-size: 4rem; color: #d4af37"
+                    ></i>
+                  </div>
+                  <h3 class="text-center text-light">Timely Execution</h3>
+                </div>
+                <div class="flip-card-back">
+                  <i class="bi bi-quote quote-icon"></i>
+                  <p>
+                    We respect your time. Our projects are efficiently managed
+                    to ensure smooth delivery without compromising quality.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="joinUs">
+      <div class="px-4 py-5 my-5 text-md-start">
+        <div class="col-lg-6 mx-auto">
+          <h1 class="display-5 golden-text">
+            Join the RenArc Team and Bring Comfort to Life.
+          </h1>
+          <hr class="custom-divider-green" />
+          <p class="lead mb-0">
+            At RenArc Group, we're always looking for skilled, passionate
+            professionals to join our growing team. Specializing in high-quality
+            renovations and client-focused construction solutions, we take pride
+            in delivering exceptional results and in fostering a supportive,
+            collaborative work environment.
+          </p>
+        </div>
+      </div>
+      <div
+        class="hero-section text-white d-flex align-items-center"
+        style="
+          min-height: 90vh;
+          background: linear-gradient(
+                to right,
+                rgba(0, 0, 0, 0.7),
+                rgba(0, 0, 0, 0)
+              )
+              center center / cover no-repeat,
+            url('../../images/join-us.jpg') center center / cover no-repeat;
+        "
+      >
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-5">
+              <h1 class="display-5 fw-bold lh-1 mb-3">Grow With Us</h1>
+              <p class="lead">
+                As part of our team, you’ll do more than build and renovate
+                spaces; you’ll help create environments where people feel safe,
+                seen, and truly at home. We seek dedicated professionals who
+                take pride in their craft, value teamwork, and care about the
+                people behind every project.
+              </p>
+              <p class="lead">
+                Whether you're a seasoned expert or just starting out, RenArc
+                offers the opportunity to grow your skills, work with integrity,
+                and bring comfort to life, one home at a time.
+              </p>
+              <a
+                href="../aboutUs/aboutUs.html"
+                class="btn btn-outline-warning ps-4 fw-bold"
+                >Join Us
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="29"
+                  height="29"
+                  fill="currentColor"
+                  class="bi bi-arrow-right-short"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8"
+                  />
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="footer">
+      <footer class="footerbg py-5">
+        <div class="container">
+          <!-- Main Footer Content - 4 Perfectly Spaced Columns -->
+          <div class="row justify-content-between px-lg-4">
+            <!-- Added horizontal padding -->
+            <!-- First Column -->
+            <div class="col-md-auto col-6 text-center text-md-start">
+              <h3 class="text-light">Working Hours</h3>
+              <p class="text-light mb-3">
+                <i class="bi bi-calendar me-2"></i> Mon-Fri, 9:00am-6:00pm
+              </p>
+              <h3 class="text-light">Coverage Area</h3>
+              <p class="text-light">
+                <i class="bi bi-geo-alt me-2"></i> Central Florida
+              </p>
+              <p class="text-light">
+                <i class="bi bi-geo-alt me-2"></i> South Florida
+              </p>
+            </div>
+
+            <!-- Second Column -->
+            <div class="col-md-auto col-6 text-center text-md-start">
+              <h3 class="text-light">Contact Us</h3>
+              <p class="text-light">
+                <i
+                  class="bi bi-envelope me-2 contact-icon email-icon"
+                  data-email="info@renarcgroup.com"
+                ></i>
+                info@renarcgroup.com
+              </p>
+              <p class="text-light">
+                <i
+                  class="bi bi-envelope me-2 contact-icon email-icon"
+                  data-email="carrier@renarcgroup.com"
+                ></i>
+                carrier@renarcgroup.com
+              </p>
+              <p class="text-light mb-3">
+                <i
+                  class="bi bi-telephone me-2 contact-icon phone-icon"
+                  data-phone="+17287772517"
+                ></i>
+                +1 (728)-777-2517
+              </p>
+              <div
+                class="socials text-light d-flex gap-3 justify-content-center justify-content-md-start"
+              >
+                <a
+                  href="https://www.facebook.com/profile.php?id=61578246749694&notif_id=1752200342615326&notif_t=follower_invite&ref=notif"
+                  target="_self"
+                  rel="noopener noreferrer"
+                  class="text-light"
+                >
+                  <i class="bi bi-facebook"></i>
+                </a>
+                <a
+                  href="https://www.instagram.com/renarcgroup/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="text-light"
+                >
+                  <i class="bi bi-instagram"></i>
+                </a>
+                <a
+                  href="https://linkedin.com/company/yourpage"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="text-light"
+                >
+                  <i class="bi bi-linkedin"></i>
+                </a>
+                <a
+                  href="https://tiktok.com/@yourpage"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="text-light"
+                >
+                  <i class="bi bi-tiktok"></i>
+                </a>
+              </div>
+            </div>
+
+            <!-- Third Column -->
+            <div class="col-md-3 col-6">
+              <div
+                class="h-100 d-flex flex-column align-items-center align-items-md-start text-center text-md-start px-2"
+              >
+                <h3 class="text-light">Let's talk</h3>
+                <p
+                  class="text-light mw-100"
+                  style="max-width: 280px; width: 100%"
+                >
+                  Ready to bring your vision to life? Let's connect and make it
+                  happen.
+                </p>
+                <a
+                  href="../../public/form/form.html"
+                  class="btn text-gold mt-2 px-4 py-2 fw-bold hover-bounce align-self-center align-self-md-start"
+                  >Schedule Now</a
+                >
+              </div>
+            </div>
+
+            <!-- Fourth Column - Logo -->
+            <div
+              class="col-md-auto col-6 d-flex align-items-center justify-content-center"
+            >
+              <a class="navbar-brand" href="../../index.html">
+                <img
+                  src="../../images/logo.png"
+                  alt="RenArc Logo"
+                  style="height: 150px; width: auto"
+                />
+              </a>
+            </div>
+          </div>
+
+          <!-- Divider Line -->
+          <hr class="my-4 mx-auto bg-secondary" style="max-width: 95%" />
+
+          <!-- Footer Bottom -->
+          <div class="row align-items-center">
+            <div
+              class="col-md-4 text-center text-md-start mb-3 mb-md-0 text-secondary"
+            >
+              &copy; 2025 RenArc Group. All rights reserved.
+            </div>
+            <div class="col-md-4">
+              <div class="d-flex flex-wrap justify-content-center gap-3">
+                <a href="#" class="text-decoration-none text-secondary"
+                  >Privacy Policy</a
+                >
+                <a href="#" class="text-decoration-none text-secondary"
+                  >Terms of Service</a
+                >
+                <a href="#" class="text-decoration-none text-secondary">FAQ</a>
+              </div>
+            </div>
+            <div
+              class="col-md-4 text-center text-md-end mt-3 mt-md-0 text-secondary"
+            >
+              Developed by Luka Varazi
+            </div>
+          </div>
+        </div>
+
+        <!-- Back to top button -->
+        <a
+          href="#"
+          class="back-to-top position-fixed bottom-0 end-0 m-4 p-2 d-flex align-items-center justify-content-center"
+        >
+          <i
+            class="bi bi-arrow-up-square"
+            style="color: #d4af37; font-size: 1.8rem"
+          ></i>
+        </a>
+      </footer>
+    </section>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+      crossorigin="anonymous"
+    ></script>
+    <script src="../../global/global.js"></script>
+  </body>
+</html>

@@ -1,0 +1,268 @@
+body {
+  padding-top: 150px !important;
+}
+@media (max-width: 991.98px) {
+  body {
+    padding-top: 120px !important;
+  }
+}
+@media (max-width: 767.98px) {
+  body {
+    padding-top: 100px !important;
+  }
+}
+@media (max-width: 575.98px) {
+  body {
+    padding-top: 85px !important;
+  }
+}
+
+/* Hero image overlay and text styles */
+.hero-section {
+  position: relative;
+  width: 100%;
+  min-height: 350px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+.hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    135deg,
+    rgba(27, 34, 20, 0.7),
+    rgba(38, 47, 27, 0.7)
+  );
+  z-index: 1;
+}
+.hero-text {
+  position: relative;
+  z-index: 2;
+  color: #fff;
+  padding: 2.5rem 2rem;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.25);
+  border-radius: 1rem;
+  max-width: 700px;
+  margin: 0 auto;
+  text-align: left;
+}
+@media (max-width: 991.98px) {
+  .hero-text {
+    padding: 2rem 1rem;
+    font-size: 1.1rem;
+    max-width: 95vw;
+    text-align: center;
+  }
+}
+@media (max-width: 767.98px) {
+  .hero-section {
+    min-height: 220px;
+  }
+  .hero-text {
+    padding: 1.2rem 0.5rem;
+    font-size: 1rem;
+    border-radius: 0.7rem;
+  }
+}
+body {
+  background-color: #f5f5f5;
+  padding-top: 126.7px; /* For fixed navbar */
+  font-family: "DM Sans", sans-serif !important;
+  font-optical-sizing: auto !important;
+  font-weight: 400 !important;
+  font-style: normal !important;
+}
+
+.golden-text {
+  color: #d4af37;
+}
+
+/* Ensure consistent font family with the body */
+#contact {
+  font-family: "DM Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* Section title styling */
+
+.title-underline {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 60px;
+  height: 3px;
+  background: #394826;
+  transition: width 0.3s ease;
+}
+
+.section-title:hover .title-underline {
+  width: 100px;
+}
+
+/* Contact info items */
+.contact-info-item {
+  display: flex;
+  align-items: flex-start;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  background-color: rgba(57, 72, 38, 0.05);
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+.contact-info-item:hover {
+  background-color: rgba(57, 72, 38, 0.1);
+  transform: translateX(5px);
+}
+
+/* Icon styling */
+.icon {
+  color: #394826;
+  font-size: 1.2rem;
+  margin-right: 0.75rem;
+  margin-top: 0.2rem;
+}
+
+/* Social media */
+.social-title {
+  color: #394826;
+}
+
+.social-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  background-color: rgba(57, 72, 38, 0.1);
+  border-radius: 50%;
+  color: #394826;
+  transition: all 0.3s ease;
+}
+
+.social-link:hover {
+  background-color: #d4af37;
+  color: white;
+  transform: translateY(-3px);
+}
+
+/* Email form container */
+.email-box {
+  background-color: #394826;
+  border-radius: 12px;
+  color: #fff;
+  padding: 2rem;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.form-title {
+  color: #fff;
+  font-weight: 600;
+  position: relative;
+  padding-bottom: 0.5rem;
+}
+
+.form-title::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 40px;
+  height: 2px;
+  background: #d4af37;
+}
+
+/* Form styling */
+.email-box .form-control,
+.email-box textarea {
+  background-color: #f8f9fa;
+  color: #000;
+  border: none;
+  border-radius: 6px;
+  padding: 0.75rem;
+  transition: all 0.3s ease;
+}
+
+.email-box .form-control:focus,
+.email-box textarea:focus {
+  background-color: #fff;
+  box-shadow: 0 0 0 3px rgba(212, 175, 55, 0.3);
+}
+
+/* Button styling */
+.btn-send-message {
+  background-color: #d4af37;
+  border: none;
+  color: #000;
+  padding: 0.75rem 2rem;
+  border-radius: 6px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.btn-send-message:hover {
+  background-color: #c19d2e;
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.custom-divider-green-central {
+  margin: 2rem auto;
+  width: 20%;
+  border: 0;
+  border-top: 3px solid #394826;
+}
+
+/*MAPS*/
+/* Section title styling */
+#location-map .section-title {
+  color: #394826;
+  position: relative;
+  display: inline-block;
+}
+
+#location-map .title-underline {
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  right: 0;
+  width: 60px;
+  height: 3px;
+  background: #d4af37;
+  transition: width 0.3s ease;
+  margin: 0 auto;
+}
+
+#location-map .section-title:hover .title-underline {
+  width: 100px;
+}
+
+/* Map container styling */
+.map-container {
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 991.98px) {
+  .email-box {
+    padding: 1.5rem;
+    margin: 0 12px;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .email-box {
+    padding: 1rem;
+    margin: 0 8px 1rem;
+  }
+
+  .custom-divider-green-central {
+    width: 40%;
+  }
+}

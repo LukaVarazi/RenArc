@@ -1,0 +1,232 @@
+/* Optional: Add a dark overlay for better text contrast */
+.position-relative::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4); /* Adjust opacity as needed */
+}
+
+/* If you want the text to be centered on mobile */
+@media (max-width: 768px) {
+  .position-absolute {
+    text-align: center;
+  }
+  .col-md-6 {
+    margin: 0 auto;
+  }
+}
+
+body {
+  padding-top: 126px !important;
+}
+
+/* === RESPONSIVENESS & HERO OVERLAY FIX === */
+body {
+  padding-top: 150px !important;
+}
+@media (max-width: 991.98px) {
+  body {
+    padding-top: 120px !important;
+  }
+}
+@media (max-width: 767.98px) {
+  body {
+    padding-top: 100px !important;
+  }
+}
+@media (max-width: 575.98px) {
+  body {
+    padding-top: 85px !important;
+  }
+}
+
+.hero-section {
+  position: relative;
+  width: 100%;
+  min-height: 350px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+.hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    135deg,
+    rgba(27, 34, 20, 0.7),
+    rgba(38, 47, 27, 0.7)
+  );
+  z-index: 1;
+}
+.hero-text {
+  position: relative;
+  z-index: 2;
+  color: #fff;
+  padding: 2.5rem 2rem;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.25);
+  border-radius: 1rem;
+  max-width: 700px;
+  margin: 0 auto;
+  text-align: left;
+}
+@media (max-width: 991.98px) {
+  .hero-text {
+    padding: 2rem 1rem;
+    font-size: 1.1rem;
+    max-width: 95vw;
+    text-align: center;
+  }
+}
+@media (max-width: 767.98px) {
+  .hero-section {
+    min-height: 220px;
+  }
+  .hero-text {
+    padding: 1.2rem 0.5rem;
+    font-size: 1rem;
+    border-radius: 0.7rem;
+  }
+}
+
+.leadership-box {
+  max-width: 1000px; /* increased from 800px */
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #f8f9fa; /* or your .navbarbg background */
+  border-radius: 1rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.golden-text {
+  color: #d4af37;
+}
+
+/* Values Section */
+.values-bg {
+  background: linear-gradient(135deg, #1b2214, #262f1b) !important;
+  padding: 3rem !important;
+  color: white !important;
+  border-radius: 8px;
+}
+
+.values-bg h2,
+.values-bg h4,
+.values-bg p {
+  color: white !important;
+}
+
+.icon-box {
+  width: 70px;
+  height: 70px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(212, 175, 55, 0.1);
+  border-radius: 50%;
+  transition: all 0.3s ease;
+}
+
+.icon-box-big {
+  width: 90px;
+  height: 90px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(212, 175, 55, 0.1);
+  border-radius: 50%;
+  transition: all 0.3s ease;
+}
+
+.icon-box:hover {
+  background-color: rgba(212, 175, 55, 0.3);
+  transform: scale(1.1);
+}
+
+/* Responsive Adjustments */
+@media (max-width: 767.98px) {
+  .values-bg {
+    padding: 2rem 1rem !important;
+  }
+
+  .col-md-4 {
+    margin-bottom: 2rem;
+  }
+
+  .col-md-4:last-child {
+    margin-bottom: 0;
+  }
+}
+
+/*FANCY FLIPPING BLOCKS*/
+
+.flip-card {
+  width: 100%;
+  max-width: 500px; /* or go larger if you want */
+  height: 400px; /* increase height */
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateX(180deg);
+}
+
+.flip-card-front,
+.flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  box-shadow: 7px 7px 7px rgba(18, 60, 13, 0.3);
+  font-size: 1.2rem;
+}
+
+.flip-card-front {
+  background-color: #f8f9fa;
+  background-color: #262f1b;
+}
+
+.flip-card-back {
+  background-color: #d4af37;
+  color: white;
+  transform: rotateX(180deg);
+}
+
+.flip-icon {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+@media (min-width: 768px) {
+  .flip-card {
+    margin: 1rem;
+  }
+}
+
+.quote-icon {
+  font-size: 3rem;
+  color: #ffffff;
+  align-self: flex-start;
+  margin-bottom: 0.5rem;
+}

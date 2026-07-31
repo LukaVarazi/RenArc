@@ -1,0 +1,355 @@
+/* === HOMEPAGE OR PAGE-SPECIFIC STYLES === */
+
+/* Homepage section padding */
+#homepage {
+  padding: 50px;
+  box-sizing: border-box;
+  min-height: calc(100vh - 150px - 100px); /* Navbar + footer */
+}
+
+body {
+  padding-top: 126.7px !important; /* Adjust for navbar height */
+}
+
+.golden-text {
+  color: #d4af37;
+}
+
+.green-icon {
+  color: #4a622c;
+}
+
+@media (max-width: 767.98px) {
+  #homepage {
+    padding: 30px;
+    min-height: calc(100vh - 130px - 100px);
+  }
+}
+
+/* Logo section */
+.logo-section {
+  background-color: #ddd3c9;
+  display: inline-block;
+  padding: 30px 50px;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+/* Outer green box with blurred image bg */
+.outer-div {
+  background: linear-gradient(135deg, #1b2214, #262f1b);
+  border-radius: 15px;
+  padding: 80px 40px;
+  margin: 0;
+  box-sizing: border-box;
+  position: relative;
+  overflow: hidden;
+}
+
+.blur-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url("/public/images/homeimage.jpg") center/cover no-repeat;
+  filter: blur(10px);
+  z-index: 0;
+}
+
+.outer-div > *:not(.blur-bg) {
+  position: relative;
+  z-index: 1;
+}
+
+/* Inner gray box */
+.inner-div {
+  background-color: #333333;
+  border-radius: 12px;
+  padding: 120px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.inner-div img {
+  border-radius: 10px;
+  max-width: 100%;
+  height: auto;
+}
+
+/* Text utilities */
+.constrained-text {
+  max-width: 100%;
+  word-break: normal;
+  overflow-wrap: break-word;
+}
+
+.hero-video {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  height: calc(
+    100vh - 126.7px
+  ); /* Full viewport height minus navbar for desktop */
+  object-fit: cover;
+  z-index: -1;
+}
+
+.hero-section {
+  height: calc(100vh - 126.7px);
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0));
+}
+
+/* Large screens (desktop) adjustment */
+@media (min-width: 992px) {
+  .hero-video,
+  .hero-section {
+    min-height: 600px; /* Ensure minimum height on larger screens */
+  }
+}
+
+/* Tablet and smaller laptops */
+@media (max-width: 991.98px) {
+  .hero-video,
+  .hero-section {
+    height: calc(70vh - 80px); /* Adjust for smaller navbar */
+    min-height: 450px;
+  }
+
+  #head {
+    margin-top: -46.7px; /* Remove gap between navbar and video */
+  }
+}
+
+/* Tablets */
+@media (max-width: 767.98px) {
+  .hero-video,
+  .hero-section {
+    height: calc(60vh - 70px);
+    min-height: 400px;
+  }
+
+  #head {
+    margin-top: -56.7px;
+  }
+}
+
+/* Mobile devices */
+@media (max-width: 575.98px) {
+  .hero-video,
+  .hero-section {
+    height: calc(50vh - 60px);
+    min-height: 300px;
+  }
+
+  #head {
+    margin-top: -66.7px;
+  }
+
+  .hero-video {
+    object-position: center;
+  }
+}
+
+/*FANCY LEARN MORE*/
+
+.overlap-section {
+  margin-top: -150px;
+  padding-top: 80px;
+  z-index: 2;
+  position: relative;
+}
+
+.service-card {
+  position: relative;
+  background-color: #fff;
+  border: none;
+  border-radius: 1rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  will-change: transform;
+  margin-bottom: 2rem;
+  overflow: visible; /* allow button to overflow */
+}
+
+.service-card .service-list {
+  display: none;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  margin-top: 1rem;
+}
+
+.service-card:hover {
+  transform: scale(1.05);
+  z-index: 3;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.service-card:hover .service-list {
+  display: block;
+  opacity: 1;
+}
+
+.card-text {
+  margin-bottom: 1rem;
+}
+
+.learn-more-link {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.75rem;
+  font-weight: 500;
+  color: #333;
+  background-color: transparent;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  text-decoration: none;
+  outline: none;
+  transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
+  z-index: 5;
+}
+
+.service-card:hover .learn-more-link {
+  background-color: #4a622c;
+  color: white;
+  transform: translateY(100%);
+}
+
+.learn-more-wrapper {
+  position: relative;
+  height: 60px; /* enough to contain the button even when it moves */
+  overflow: hidden;
+}
+
+.service-card:hover .learn-more-link {
+  transform: translateY(0); /* remove the translateY effect */
+  background-color: #4a622c;
+  color: white;
+}
+
+/*PROJECTS BUTTON*/
+
+.link-container {
+  position: relative;
+  width: 100%;
+}
+
+.animated-link {
+  position: relative;
+  text-decoration: none;
+  color: #ffc107;
+  display: inline-flex;
+  align-items: center;
+  padding: 0.5rem 0;
+  transition: all 0.3s ease;
+  z-index: 1;
+}
+
+.animated-link:hover {
+  color: #ffc107;
+}
+
+.link-container::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: 8px; /* Adjust to align with text baseline */
+  left: 0;
+  background-color: #ffc107;
+  transition: width 0.3s ease;
+}
+
+.link-container:hover::after {
+  width: 100%;
+}
+
+.animated-link i {
+  transition: transform 0.3s ease;
+}
+
+.animated-link:hover i {
+  transform: translate(3px, -3px);
+}
+
+/* Responsive adjustments */
+@media (max-width: 991.98px) {
+  .logo-section {
+    padding: 20px 30px;
+  }
+
+  .outer-div {
+    padding: 40px 24px;
+  }
+
+  .inner-div {
+    padding: 60px 24px;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero-video {
+    height: calc(60vh - 80px);
+  }
+
+  .overlap-section {
+    margin-top: -100px;
+    padding-top: 60px;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .logo-section {
+    padding: 12px 18px;
+  }
+
+  .outer-div {
+    padding: 24px 16px;
+    border-radius: 10px;
+  }
+
+  .inner-div {
+    padding: 24px;
+  }
+
+  .service-card {
+    margin-bottom: 1rem;
+  }
+
+  .hero-video {
+    height: calc(50vh - 70px);
+  }
+
+  .learn-more-link {
+    font-size: 0.9rem;
+    padding: 0.5rem;
+  }
+
+  /* Make sure overflowing animated links behave on small screens */
+  .link-container::after {
+    bottom: 6px;
+  }
+}
+
+@media (max-width: 479.98px) {
+  #homepage {
+    padding: 18px;
+  }
+
+  .inner-div {
+    padding: 16px;
+  }
+
+  .hero-video {
+    height: calc(40vh - 60px);
+  }
+}

@@ -1,0 +1,456 @@
+body {
+  padding-top: 126.7px !important;
+}
+
+.golden-text {
+  color: #d4af37;
+}
+
+.hero-video {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  height: calc(
+    100vh - 126.7px
+  ); /* Full viewport height minus navbar for desktop */
+  object-fit: cover;
+  z-index: -1;
+}
+
+.hero-section {
+  height: calc(100vh - 126.7px);
+  background: linear-gradient(to left, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0));
+}
+
+.hero-section .container {
+  height: 100%;
+}
+
+.hero-section .row {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.hero-text {
+  padding: 2rem;
+}
+
+.hero-text h1 {
+  font-size: 2.5rem;
+  line-height: 1.2;
+  margin-bottom: 1rem;
+}
+
+.hero-text .custom-divider-gold {
+  width: 25%;
+  margin: 1.5rem 0;
+  transition: margin 0.3s ease;
+}
+
+.hero-text p {
+  font-size: 1.25rem;
+  line-height: 1.5;
+  margin: 0;
+}
+
+/* Large screens (desktop) adjustment */
+@media (min-width: 992px) {
+  .hero-video,
+  .hero-section {
+    min-height: 600px; /* Ensure minimum height on larger screens */
+  }
+}
+
+/* Tablet and smaller laptops */
+@media (max-width: 991.98px) {
+  .hero-video,
+  .hero-section {
+    height: calc(70vh - 80px); /* Adjust for smaller navbar */
+    min-height: 450px;
+  }
+
+  #head {
+    margin-top: -46.7px; /* Remove gap between navbar and video */
+  }
+
+  .hero-text {
+    padding: 1.5rem;
+  }
+
+  .hero-text h1 {
+    font-size: 2.25rem;
+  }
+}
+
+/* Tablets */
+@media (max-width: 767.98px) {
+  .hero-video,
+  .hero-section {
+    height: calc(60vh - 70px);
+    min-height: 400px;
+  }
+
+  #head {
+    margin-top: -56.7px;
+  }
+
+  .hero-section .container {
+    padding-top: 30px;
+  }
+}
+
+/* Mobile devices */
+@media (max-width: 575.98px) {
+  .hero-video,
+  .hero-section {
+    height: calc(50vh - 60px);
+    min-height: 300px;
+  }
+
+  #head {
+    margin-top: -66.7px;
+  }
+
+  .hero-video {
+    object-position: center;
+  }
+
+  .hero-text {
+    padding: 1rem;
+  }
+
+  .hero-text h1 {
+    font-size: 1.75rem;
+    margin-bottom: 0.75rem;
+  }
+
+  .hero-text p {
+    font-size: 1rem;
+  }
+
+  .hero-text .custom-divider-gold {
+    margin: 1rem 0;
+    width: 30%;
+  }
+}
+
+/* SERVICES */
+
+/* Main Layout */
+.two-col-layout {
+  display: flex;
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 20px;
+  gap: 2rem;
+}
+
+/* Image Column - Completely Fixed */
+.image-side {
+  flex: 2;
+  position: relative;
+  height: 0; /* Collapse container */
+}
+
+.img1 {
+  padding-bottom: 43.5%; /* Default aspect ratio (adjust as needed) */
+}
+.img2 {
+  padding-bottom: 48.8%; /* Default aspect ratio (adjust as needed) */
+}
+.img3 {
+  padding-bottom: 37.5%; /* Default aspect ratio (adjust as needed) */
+}
+
+.column-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: calc(100% + 30px); /* 60px total extra */
+  object-fit: cover;
+  border-radius: 4px;
+  transform: translateY(-10px); /* 30px overflow top */
+}
+
+/* Items Column - Perfectly Centered */
+.items-side {
+  flex: 1;
+  padding: 0px 0; /* 30px top/bottom */
+  margin-top: 0px; /* Compensate for image overflow */
+  position: relative;
+  z-index: 1;
+}
+
+/* Expandable Item */
+.expandable-item {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+/* Header with Hover Effect */
+.item-header {
+  position: relative;
+  padding: 0.75rem 0;
+  cursor: pointer;
+  display: block;
+}
+
+.item-title {
+  position: relative;
+  font-size: 1.1rem;
+  z-index: 2;
+  transition: color 0.2s ease;
+}
+
+/* Underline Animation */
+.hover-underline {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: #d4af37;
+  transition: width 0.3s ease-out;
+}
+
+.item-header:hover .hover-underline {
+  width: 100%;
+}
+
+.item-header:hover .item-title {
+  color: #d4af37;
+}
+
+/* Content Area */
+.item-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.35s ease;
+  background-color: rgba(248, 249, 250, 0.4);
+}
+
+/* Toggle Behavior */
+.expand-toggle {
+  display: none;
+}
+
+/* Show content when checked */
+.expand-toggle:checked ~ .item-content {
+  max-height: 300px;
+}
+
+/* Active state styling */
+.expand-toggle:checked + .item-header .item-title {
+  color: #d4af37;
+}
+
+/* Content Layout */
+.text-cell {
+  padding: 1rem;
+}
+
+.text-cell p {
+  margin: 0;
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .two-col-layout {
+    flex-direction: column;
+    padding: 0 15px;
+    gap: 1rem;
+  }
+
+  .image-side {
+    width: 100%;
+    height: 300px;
+    position: relative;
+  }
+
+  .expand-toggle:checked ~ .item-content {
+    max-height: 300px;
+  }
+}
+
+/* Reversed Layout */
+.two-col-layout.reversed {
+  flex-direction: row-reverse; /* Only change needed for desktop */
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+  .two-col-layout.reversed {
+    flex-direction: column; /* Same as original on mobile */
+  }
+}
+
+/*BRANDS*/
+
+.brand-carousel-wrapper {
+  position: relative;
+  overflow: hidden;
+  padding: 0 50px; /* space from left/right wall */
+}
+
+.brand-carousel {
+  display: flex;
+  animation: scroll 20s linear infinite;
+}
+
+.brand-carousel img {
+  flex: 0 0 20%; /* exactly 5 logos in view */
+  max-width: 20%;
+  height: auto;
+  object-fit: contain;
+  padding: 0 50px; /* space between logos */
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.brand-carousel-wrapper::before {
+  left: 0;
+  background: linear-gradient(to right, white, transparent);
+}
+
+.brand-carousel-wrapper::after {
+  right: 0;
+  background: linear-gradient(to left, white, transparent);
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+  .brand-carousel img {
+    flex: 0 0 33.33%; /* 3 logos visible on tablet/phone */
+    max-width: 33.33%;
+  }
+}
+
+@media (max-width: 480px) {
+  .brand-carousel img {
+    flex: 0 0 50%; /* 2 logos visible on very small screens */
+    max-width: 50%;
+  }
+}
+
+/* Reduce paddings and gaps for smaller screens */
+@media (max-width: 991.98px) {
+  .brand-carousel-wrapper {
+    padding: 0 24px;
+  }
+
+  .brand-carousel img {
+    padding: 0 24px;
+  }
+}
+
+@media (max-width: 479.98px) {
+  .two-col-layout {
+    gap: 0.75rem;
+    padding: 0 12px;
+  }
+
+  .column-image {
+    transform: none;
+  }
+}
+
+/* Very small screens - extra adjustments */
+@media (max-width: 399.98px) {
+  .two-col-layout {
+    gap: 0.5rem;
+    padding: 0 8px;
+  }
+
+  .image-side {
+    margin-bottom: 1rem;
+  }
+
+  /* Adjust image aspect ratios for very small screens */
+  .img1 {
+    padding-bottom: 50%;
+  }
+  .img2 {
+    padding-bottom: 55%;
+  }
+  .img3 {
+    padding-bottom: 45%;
+  }
+
+  /* Ensure overlay shadows are visible */
+  .column-image + div[style*="linear-gradient"] {
+    height: 60% !important;
+  }
+
+  /* Adjust item headers for smaller text */
+  .item-title {
+    font-size: 1rem;
+  }
+
+  .text-cell p {
+    font-size: 0.85rem;
+  }
+
+  /* Ensure expandable content doesn't overflow */
+  .expand-toggle:checked ~ .item-content {
+    max-height: 350px;
+  }
+
+  /* Hero section text and shadow adjustments */
+  .hero-text {
+    padding: 0.75rem;
+  }
+
+  .hero-text h1 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+    line-height: 1.1;
+  }
+
+  .hero-text p {
+    font-size: 0.875rem;
+    line-height: 1.4;
+  }
+
+  .hero-text .custom-divider-gold {
+    margin: 0.75rem 0;
+    width: 35%;
+  }
+
+  /* Ensure hero section follows aspect ratio */
+  .hero-video,
+  .hero-section {
+    aspect-ratio: 9/16;
+    height: auto !important;
+    min-height: 320px;
+    max-height: 100vw;
+  }
+
+  /* Make sure container has proper padding */
+  .hero-section .container {
+    padding-top: 15px;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  /* Adjust gradient overlay for better text readability */
+  .hero-section {
+    background: linear-gradient(
+      to left,
+      rgba(0, 0, 0, 0.8),
+      rgba(0, 0, 0, 0.2)
+    );
+  }
+}

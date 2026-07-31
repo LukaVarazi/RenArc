@@ -1,0 +1,1861 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>RenArc Group</title>
+    <link rel="stylesheet" href="../../global/global.css" />
+    <link rel="stylesheet" href="job-app.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+    <!--Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <section id="navbar">
+      <nav class="navbar navbar-expand-lg navbarbg fixed-top px-5 navbar-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="../../index.html">
+            <img
+              src="../../images/logo.png"
+              alt=""
+              height="100px"
+              width="100px"
+            />
+          </a>
+
+          <!-- Right-side section -->
+          <div class="ms-auto d-flex align-items-center gap-3 no-wrap-navbar">
+            <!-- Phone Number (large screens only) -->
+            <p
+              class="mb-0 d-none d-lg-flex align-items-center gap-1 text-light pt-2"
+            >
+              <i class="bi bi-telephone text-light"></i> +1 (728)-777-2517
+            </p>
+
+            <!-- Schedule Now button -->
+            <a
+              href="../form/form.html"
+              class="btn text-gold mt-2 px-4 py-2 fw-bold hover-bounce schedule-btn-nav"
+              >Schedule Now</a
+            >
+
+            <!-- Dropdown -->
+            <div class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle text-light"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="32"
+                  height="32"
+                  fill="currentColor"
+                  class="bi bi-list"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"
+                  />
+                </svg>
+              </a>
+              <ul class="dropdown-menu dropdown-menu-end navbarbg">
+                <li>
+                  <a class="dropdown-item text-light" href="../../index.html"
+                    >Home</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item text-light"
+                    href="../aboutUs/aboutUs.html"
+                    >Who We Are</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item text-light"
+                    href="../projects/projects.html"
+                    >What We Do</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item text-light"
+                    href="../ourServices/services.html"
+                    >What We Offer</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item text-light" href="#">Careers</a>
+                </li>
+                <li>
+                  <a class="dropdown-item text-light" href="#">Contact</a>
+                </li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item text-light" href="../form/form.html"
+                    >Schedule Now</a
+                  >
+                </li>
+
+                <!-- Phone Number in dropdown (only small screens) -->
+                <li class="d-lg-none px-3 py-2 text-light">
+                  <i class="bi bi-telephone text-light"></i> +1 (728)-777-2517
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </section>
+
+    <section id="form">
+      <div class="application-container">
+        <!-- Progress Steps Indicator -->
+        <div class="progress-steps-container">
+          <div class="progress-line"></div>
+          <div class="progress-line-fill"></div>
+          <div class="step-indicator active">
+            <div class="step-icon">1</div>
+            <div class="step-label">Profile</div>
+          </div>
+          <div class="step-indicator">
+            <div class="step-icon">2</div>
+            <div class="step-label">Background</div>
+          </div>
+          <div class="step-indicator">
+            <div class="step-icon">3</div>
+            <div class="step-label">EEO</div>
+          </div>
+          <div class="step-indicator">
+            <div class="step-icon">4</div>
+            <div class="step-label">Review</div>
+          </div>
+        </div>
+
+        <!-- Header -->
+        <div class="header">
+          <h1>
+            <i class="bi bi-briefcase me-2"></i>Application for:
+            <span id="position-title">Job Title</span>
+          </h1>
+          <p>
+            Please be sure to fill out all required fields.
+            <span class="required-field"></span> indicates a required field.
+          </p>
+        </div>
+
+        <!-- Form Steps -->
+        <div class="step-container">
+          <!-- Step 1: Candidate's Profile -->
+          <div class="step active" id="step1">
+            <h3 class="mb-4">Candidate's Profile</h3>
+            <p class="text-muted mb-4">Enter your information</p>
+
+            <div class="row">
+              <div class="col-md-6">
+                <div class="mb-3">
+                  <label for="legalName" class="form-label required-field"
+                    >Full Legal Name (First, Middle, Last)</label
+                  >
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="legalName"
+                    required
+                  />
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="mb-3">
+                  <label for="preferredName" class="form-label"
+                    >Preferred Name (if different)</label
+                  >
+                  <input type="text" class="form-control" id="preferredName" />
+                </div>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-md-6">
+                <div class="mb-3">
+                  <label for="email" class="form-label required-field"
+                    >Email Address</label
+                  >
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="email"
+                    required
+                  />
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="mb-3">
+                  <label for="phoneType" class="form-label required-field"
+                    >Phone Number Type</label
+                  >
+                  <select class="form-select" id="phoneType" required>
+                    <option value="" selected disabled>
+                      Select phone type
+                    </option>
+                    <option value="Mobile">Mobile</option>
+                    <option value="Home">Home</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+
+            <div class="mb-3">
+              <label for="phone" class="form-label required-field"
+                >Phone Number</label
+              >
+              <input type="tel" class="form-control" id="phone" required />
+            </div>
+
+            <div class="mb-3">
+              <label for="address" class="form-label required-field"
+                >Street Address</label
+              >
+              <input type="text" class="form-control" id="address" required />
+            </div>
+
+            <div class="row">
+              <div class="col-md-6">
+                <div class="mb-3">
+                  <label for="city" class="form-label required-field"
+                    >City</label
+                  >
+                  <input type="text" class="form-control" id="city" required />
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="mb-3">
+                  <label for="state" class="form-label required-field"
+                    >State</label
+                  >
+                  <input type="text" class="form-control" id="state" required />
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="mb-3">
+                  <label for="zipcode" class="form-label required-field"
+                    >ZIP Code</label
+                  >
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="zipcode"
+                    required
+                  />
+                </div>
+              </div>
+            </div>
+
+            <div class="mb-3">
+              <label class="form-label required-field"
+                >Preferred Contact Method</label
+              >
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  id="contactPhone"
+                  name="contactMethod"
+                  value="phone"
+                />
+                <label class="form-check-label" for="contactPhone">Phone</label>
+              </div>
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  id="contactEmail"
+                  name="contactMethod"
+                  value="email"
+                />
+                <label class="form-check-label" for="contactEmail">Email</label>
+              </div>
+            </div>
+
+            <h5 class="mt-4 mb-3">Work Eligibility</h5>
+
+            <div class="row">
+              <div class="col-md-6">
+                <div class="mb-3">
+                  <label class="form-label required-field"
+                    >Are you legally authorized to work in the United
+                    States?</label
+                  >
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="workAuthorization"
+                      id="authYes"
+                      value="yes"
+                      required
+                    />
+                    <label class="form-check-label" for="authYes">Yes</label>
+                  </div>
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="workAuthorization"
+                      id="authNo"
+                      value="no"
+                    />
+                    <label class="form-check-label" for="authNo">No</label>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="mb-3">
+                  <label class="form-label required-field"
+                    >Will you now or in the future require visa
+                    sponsorship?</label
+                  >
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="visaSponsorship"
+                      id="visaYes"
+                      value="yes"
+                      required
+                    />
+                    <label class="form-check-label" for="visaYes">Yes</label>
+                  </div>
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="visaSponsorship"
+                      id="visaNo"
+                      value="no"
+                    />
+                    <label class="form-check-label" for="visaNo">No</label>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-md-6">
+                <div class="mb-3">
+                  <label class="form-label required-field"
+                    >Are you at least 18 years old?</label
+                  >
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="over18"
+                      id="over18Yes"
+                      value="yes"
+                      required
+                    />
+                    <label class="form-check-label" for="over18Yes">Yes</label>
+                  </div>
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="over18"
+                      id="over18No"
+                      value="no"
+                    />
+                    <label class="form-check-label" for="over18No">No</label>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="mb-3">
+                  <label class="form-label required-field"
+                    >Do you have a valid driver's license?</label
+                  >
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="driversLicense"
+                      id="licenseYes"
+                      value="yes"
+                      required
+                    />
+                    <label class="form-check-label" for="licenseYes">Yes</label>
+                  </div>
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="driversLicense"
+                      id="licenseNo"
+                      value="no"
+                    />
+                    <label class="form-check-label" for="licenseNo">No</label>
+                  </div>
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="driversLicense"
+                      id="licenseNotRequired"
+                      value="not-required"
+                    />
+                    <label class="form-check-label" for="licenseNotRequired"
+                      >Not Required for this Position</label
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="mb-3">
+              <label for="startDate" class="form-label required-field"
+                >Available Start Date</label
+              >
+              <input type="date" class="form-control" id="startDate" required />
+            </div>
+
+            <h5 class="mt-4 mb-3">Work Preferences & Availability</h5>
+
+            <div class="mb-3">
+              <label class="form-label required-field"
+                >Days Available to Work</label
+              >
+              <div class="row">
+                <div class="col-md-3">
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="checkbox"
+                      id="monday"
+                      name="availableDays"
+                      value="monday"
+                    />
+                    <label class="form-check-label" for="monday">Monday</label>
+                  </div>
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="checkbox"
+                      id="tuesday"
+                      name="availableDays"
+                      value="tuesday"
+                    />
+                    <label class="form-check-label" for="tuesday"
+                      >Tuesday</label
+                    >
+                  </div>
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="checkbox"
+                      id="wednesday"
+                      name="availableDays"
+                      value="wednesday"
+                    />
+                    <label class="form-check-label" for="wednesday"
+                      >Wednesday</label
+                    >
+                  </div>
+                </div>
+                <div class="col-md-3">
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="checkbox"
+                      id="thursday"
+                      name="availableDays"
+                      value="thursday"
+                    />
+                    <label class="form-check-label" for="thursday"
+                      >Thursday</label
+                    >
+                  </div>
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="checkbox"
+                      id="friday"
+                      name="availableDays"
+                      value="friday"
+                    />
+                    <label class="form-check-label" for="friday">Friday</label>
+                  </div>
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="checkbox"
+                      id="saturday"
+                      name="availableDays"
+                      value="saturday"
+                    />
+                    <label class="form-check-label" for="saturday"
+                      >Saturday</label
+                    >
+                  </div>
+                </div>
+                <div class="col-md-3">
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="checkbox"
+                      id="sunday"
+                      name="availableDays"
+                      value="sunday"
+                    />
+                    <label class="form-check-label" for="sunday">Sunday</label>
+                  </div>
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="checkbox"
+                      id="dayShift"
+                      name="availableShifts"
+                      value="day"
+                    />
+                    <label class="form-check-label" for="dayShift"
+                      >Day Shift</label
+                    >
+                  </div>
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="checkbox"
+                      id="nightShift"
+                      name="availableShifts"
+                      value="night"
+                    />
+                    <label class="form-check-label" for="nightShift"
+                      >Night Shift</label
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-md-4">
+                <div class="mb-3">
+                  <label class="form-label required-field"
+                    >Willing to Work Overtime?</label
+                  >
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="overtime"
+                      id="overtimeYes"
+                      value="yes"
+                      required
+                    />
+                    <label class="form-check-label" for="overtimeYes"
+                      >Yes</label
+                    >
+                  </div>
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="overtime"
+                      id="overtimeNo"
+                      value="no"
+                    />
+                    <label class="form-check-label" for="overtimeNo">No</label>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="mb-3">
+                  <label class="form-label required-field"
+                    >Willing to Relocate?</label
+                  >
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="relocate"
+                      id="relocateYes"
+                      value="yes"
+                      required
+                    />
+                    <label class="form-check-label" for="relocateYes"
+                      >Yes</label
+                    >
+                  </div>
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="relocate"
+                      id="relocateNo"
+                      value="no"
+                    />
+                    <label class="form-check-label" for="relocateNo">No</label>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="mb-3">
+                  <label class="form-label required-field"
+                    >Willing to Travel?</label
+                  >
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="travel"
+                      id="travelYes"
+                      value="yes"
+                      required
+                    />
+                    <label class="form-check-label" for="travelYes">Yes</label>
+                  </div>
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="travel"
+                      id="travelNo"
+                      value="no"
+                    />
+                    <label class="form-check-label" for="travelNo">No</label>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="mb-3" id="travelPercentageField" style="display: none">
+              <label for="travelPercentage" class="form-label"
+                >Travel Percentage (if required)</label
+              >
+              <input
+                type="number"
+                class="form-control"
+                id="travelPercentage"
+                min="0"
+                max="100"
+              />
+              <div class="form-text">
+                Enter percentage of time willing to travel
+              </div>
+            </div>
+
+            <div class="d-flex justify-content-between mt-4">
+              <div></div>
+              <button class="btn btn-primary" onclick="validateStep(1)">
+                Continue <i class="bi bi-arrow-right ms-2"></i>
+              </button>
+            </div>
+          </div>
+
+          <!-- Step 2: Professional Background -->
+          <div class="step" id="step2">
+            <h3 class="mb-4">Professional Background</h3>
+
+            <h5 class="mb-3">Education Information</h5>
+
+            <div id="educationContainer">
+              <div class="education-entry card mb-3">
+                <div class="card-body">
+                  <div class="row">
+                    <div class="col-md-6">
+                      <div class="mb-3">
+                        <label class="form-label required-field"
+                          >Education Level</label
+                        >
+                        <select
+                          class="form-select"
+                          name="educationLevel"
+                          required
+                        >
+                          <option value="" selected disabled>
+                            Select education level
+                          </option>
+                          <option value="HS Diploma">
+                            High School Diploma
+                          </option>
+                          <option value="AA">Associate Degree</option>
+                          <option value="BS">Bachelor's Degree</option>
+                          <option value="MS">Master's Degree</option>
+                          <option value="JD">Juris Doctor</option>
+                          <option value="PhD">Doctorate</option>
+                          <option value="Other">Other</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="mb-3">
+                        <label class="form-label required-field"
+                          >School / Institution Name</label
+                        >
+                        <input
+                          type="text"
+                          class="form-control"
+                          name="schoolName"
+                          required
+                        />
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="row">
+                    <div class="col-md-6">
+                      <div class="mb-3">
+                        <label class="form-label required-field"
+                          >Major / Field of Study</label
+                        >
+                        <input
+                          type="text"
+                          class="form-control"
+                          name="major"
+                          required
+                        />
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="mb-3">
+                        <label class="form-label required-field"
+                          >Graduation Year (or Expected)</label
+                        >
+                        <input
+                          type="number"
+                          class="form-control"
+                          name="graduationYear"
+                          min="1900"
+                          max="2030"
+                          required
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card-footer text-end">
+                  <button
+                    type="button"
+                    class="btn btn-sm btn-outline-danger"
+                    onclick="removeEducationEntry(this)"
+                  >
+                    <i class="bi bi-trash"></i> Remove
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <button
+              type="button"
+              class="btn btn-outline-primary btn-sm mb-4"
+              onclick="addEducationEntry()"
+            >
+              <i class="bi bi-plus-circle"></i> Add More Education
+            </button>
+
+            <h5 class="mb-3">Work Experience</h5>
+
+            <div id="experienceContainer">
+              <div class="experience-entry card mb-3">
+                <div class="card-body">
+                  <div class="row">
+                    <div class="col-md-6">
+                      <div class="mb-3">
+                        <label class="form-label required-field"
+                          >Employer</label
+                        >
+                        <input
+                          type="text"
+                          class="form-control"
+                          name="employer"
+                          required
+                        />
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="mb-3">
+                        <label class="form-label required-field"
+                          >Job Title</label
+                        >
+                        <input
+                          type="text"
+                          class="form-control"
+                          name="jobTitle"
+                          required
+                        />
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="row">
+                    <div class="col-md-3">
+                      <div class="mb-3">
+                        <label class="form-label required-field"
+                          >Start Date</label
+                        >
+                        <input
+                          type="month"
+                          class="form-control"
+                          name="startDate"
+                          required
+                        />
+                      </div>
+                    </div>
+                    <div class="col-md-3">
+                      <div class="mb-3">
+                        <label class="form-label">End Date</label>
+                        <input
+                          type="month"
+                          class="form-control"
+                          name="endDate"
+                        />
+                        <div class="form-check mt-2">
+                          <input
+                            class="form-check-input"
+                            type="checkbox"
+                            name="currentJob"
+                          />
+                          <label class="form-check-label"
+                            >I currently work here</label
+                          >
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="mb-3">
+                        <label class="form-label"
+                          >Location (Country, City, State)</label
+                        >
+                        <input
+                          type="text"
+                          class="form-control"
+                          name="location"
+                        />
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="mb-3">
+                    <label class="form-label">Description</label>
+                    <textarea
+                      class="form-control"
+                      name="description"
+                      rows="3"
+                    ></textarea>
+                  </div>
+
+                  <div class="row">
+                    <div class="col-md-6">
+                      <div class="mb-3">
+                        <label class="form-label">Supervisor Name</label>
+                        <input
+                          type="text"
+                          class="form-control"
+                          name="supervisorName"
+                        />
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="mb-3">
+                        <label class="form-label">Supervisor's Title</label>
+                        <input
+                          type="text"
+                          class="form-control"
+                          name="supervisorTitle"
+                        />
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="row">
+                    <div class="col-md-6">
+                      <div class="mb-3">
+                        <label class="form-label">Reason for Leaving</label>
+                        <input
+                          type="text"
+                          class="form-control"
+                          name="reasonForLeaving"
+                        />
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="mb-3">
+                        <label class="form-label">Employer Phone Number</label>
+                        <input
+                          type="tel"
+                          class="form-control"
+                          name="employerPhone"
+                        />
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="mb-3">
+                    <label class="form-label"
+                      >May we contact this employer?</label
+                    >
+                    <div>
+                      <div class="form-check form-check-inline">
+                        <input
+                          class="form-check-input"
+                          type="radio"
+                          name="contactEmployer"
+                          value="yes"
+                        />
+                        <label class="form-check-label">Yes</label>
+                      </div>
+                      <div class="form-check form-check-inline">
+                        <input
+                          class="form-check-input"
+                          type="radio"
+                          name="contactEmployer"
+                          value="no"
+                          checked
+                        />
+                        <label class="form-check-label">No</label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card-footer text-end">
+                  <button
+                    type="button"
+                    class="btn btn-sm btn-outline-danger"
+                    onclick="removeExperienceEntry(this)"
+                  >
+                    <i class="bi bi-trash"></i> Remove
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <button
+              type="button"
+              class="btn btn-outline-primary btn-sm mb-4"
+              onclick="addExperienceEntry()"
+            >
+              <i class="bi bi-plus-circle"></i> Add More Experience
+            </button>
+
+            <h5 class="mb-3">Certifications / Licenses</h5>
+
+            <div id="certificationContainer">
+              <div class="certification-entry card mb-3">
+                <div class="card-body">
+                  <div class="row">
+                    <div class="col-md-6">
+                      <div class="mb-3">
+                        <label class="form-label"
+                          >Certification/License Name</label
+                        >
+                        <input
+                          type="text"
+                          class="form-control"
+                          name="certificationName"
+                        />
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="mb-3">
+                        <label class="form-label">Issuing Organization</label>
+                        <input
+                          type="text"
+                          class="form-control"
+                          name="issuingOrg"
+                        />
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="row">
+                    <div class="col-md-6">
+                      <div class="mb-3">
+                        <label class="form-label">Date Obtained</label>
+                        <input
+                          type="date"
+                          class="form-control"
+                          name="dateObtained"
+                        />
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="mb-3">
+                        <label class="form-label">Expiration Date</label>
+                        <input
+                          type="date"
+                          class="form-control"
+                          name="expirationDate"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card-footer text-end">
+                  <button
+                    type="button"
+                    class="btn btn-sm btn-outline-danger"
+                    onclick="removeCertificationEntry(this)"
+                  >
+                    <i class="bi bi-trash"></i> Remove
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <button
+              type="button"
+              class="btn btn-outline-primary btn-sm mb-4"
+              onclick="addCertificationEntry()"
+            >
+              <i class="bi bi-plus-circle"></i> Add More Certifications
+            </button>
+
+            <h5 class="mb-3">Skills & Qualifications</h5>
+
+            <div class="mb-3">
+              <label class="form-label">Technical Skills</label>
+              <textarea
+                class="form-control"
+                id="technicalSkills"
+                rows="2"
+                placeholder="List your technical skills"
+              ></textarea>
+            </div>
+
+            <div class="mb-3">
+              <label class="form-label">Soft Skills</label>
+              <textarea
+                class="form-control"
+                id="softSkills"
+                rows="2"
+                placeholder="List your soft skills (leadership, communication, etc.)"
+              ></textarea>
+            </div>
+
+            <div class="mb-3">
+              <label class="form-label">Languages Spoken</label>
+              <input
+                type="text"
+                class="form-control"
+                id="languages"
+                placeholder="List languages you speak"
+              />
+            </div>
+
+            <h5 class="mb-3">Document Upload</h5>
+
+            <div class="mb-3">
+              <label for="resume" class="form-label required-field"
+                >Upload Resume (PDF/DOC, Max 5MB)</label
+              >
+              <div
+                class="upload-area"
+                onclick="document.getElementById('resume').click()"
+              >
+                <i class="bi bi-cloud-upload fa-2x mb-2"></i>
+                <p>Click to upload or drag and drop</p>
+                <p class="text-muted">PDF, DOC, DOCX (Max 5MB)</p>
+              </div>
+              <input
+                type="file"
+                id="resume"
+                accept=".pdf,.doc,.docx"
+                style="display: none"
+                required
+              />
+              <div id="resume-name" class="text-center mt-2"></div>
+            </div>
+
+            <div class="mb-3">
+              <label for="coverLetter" class="form-label"
+                >Upload Cover Letter (Optional)</label
+              >
+              <input
+                type="file"
+                class="form-control"
+                id="coverLetter"
+                accept=".pdf,.doc,.docx"
+              />
+            </div>
+
+            <div class="mb-3">
+              <label for="portfolio" class="form-label"
+                >Upload Portfolio / Work Samples (Optional)</label
+              >
+              <input
+                type="file"
+                class="form-control"
+                id="portfolio"
+                accept=".pdf,.doc,.docx,.zip"
+              />
+            </div>
+
+            <div class="d-flex justify-content-between mt-4">
+              <button class="btn btn-outline-primary" onclick="prevStep(2)">
+                <i class="bi bi-arrow-left me-2"></i>Back
+              </button>
+              <button class="btn btn-primary" onclick="validateStep(2)">
+                Continue <i class="bi bi-arrow-right ms-2"></i>
+              </button>
+            </div>
+          </div>
+
+          <!-- Step 3: Equal Employment Opportunity -->
+          <div class="step" id="step3">
+            <h3 class="mb-4">Equal Employment Opportunity</h3>
+
+            <div class="alert alert-info mb-4">
+              <p class="mb-0">
+                Renarc Group is committed to fostering a diverse and inclusive
+                workplace. We provide equal employment opportunities to all
+                applicants and employees without regard to race, color,
+                religion, sex (including pregnancy, sexual orientation, or
+                gender identity), national origin, age, disability, veteran
+                status, genetic information, or any other protected status under
+                applicable laws.
+              </p>
+            </div>
+
+            <div class="alert alert-light mb-4">
+              <p class="mb-0">
+                Completion of the following information is voluntary and will be
+                kept confidential. It will not affect your application or
+                employment in any way. This information is collected only to
+                help us comply with federal record-keeping and reporting
+                requirements.
+              </p>
+            </div>
+
+            <h5 class="mb-3">Gender</h5>
+            <div class="mb-4">
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name="gender"
+                  id="genderMale"
+                  value="male"
+                />
+                <label class="form-check-label" for="genderMale">Male</label>
+              </div>
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name="gender"
+                  id="genderFemale"
+                  value="female"
+                />
+                <label class="form-check-label" for="genderFemale"
+                  >Female</label
+                >
+              </div>
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name="gender"
+                  id="genderNonBinary"
+                  value="non-binary"
+                />
+                <label class="form-check-label" for="genderNonBinary"
+                  >Non-Binary / Third Gender</label
+                >
+              </div>
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name="gender"
+                  id="genderNotSay"
+                  value="prefer-not-to-say"
+                />
+                <label class="form-check-label" for="genderNotSay"
+                  >Prefer Not to Say</label
+                >
+              </div>
+            </div>
+
+            <h5 class="mb-3">Race / Ethnicity (Select one)</h5>
+            <div class="mb-4">
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name="ethnicity"
+                  id="ethnicityHispanic"
+                  value="hispanic"
+                />
+                <label class="form-check-label" for="ethnicityHispanic"
+                  >Hispanic or Latino</label
+                >
+              </div>
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name="ethnicity"
+                  id="ethnicityWhite"
+                  value="white"
+                />
+                <label class="form-check-label" for="ethnicityWhite"
+                  >White (Not Hispanic or Latino)</label
+                >
+              </div>
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name="ethnicity"
+                  id="ethnicityBlack"
+                  value="black"
+                />
+                <label class="form-check-label" for="ethnicityBlack"
+                  >Black or African American (Not Hispanic or Latino)</label
+                >
+              </div>
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name="ethnicity"
+                  id="ethnicityPacific"
+                  value="pacific"
+                />
+                <label class="form-check-label" for="ethnicityPacific"
+                  >Native Hawaiian or Other Pacific Islander (Not Hispanic or
+                  Latino)</label
+                >
+              </div>
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name="ethnicity"
+                  id="ethnicityAsian"
+                  value="asian"
+                />
+                <label class="form-check-label" for="ethnicityAsian"
+                  >Asian (Not Hispanic or Latino)</label
+                >
+              </div>
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name="ethnicity"
+                  id="ethnicityNative"
+                  value="native"
+                />
+                <label class="form-check-label" for="ethnicityNative"
+                  >American Indian or Alaska Native (Not Hispanic or
+                  Latino)</label
+                >
+              </div>
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name="ethnicity"
+                  id="ethnicityMulti"
+                  value="multiracial"
+                />
+                <label class="form-check-label" for="ethnicityMulti"
+                  >Two or More Races (Not Hispanic or Latino)</label
+                >
+              </div>
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name="ethnicity"
+                  id="ethnicityNotSay"
+                  value="prefer-not-to-say"
+                />
+                <label class="form-check-label" for="ethnicityNotSay"
+                  >Prefer Not to Say</label
+                >
+              </div>
+            </div>
+
+            <h5 class="mb-3">Veteran Status</h5>
+            <div class="mb-4">
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name="veteranStatus"
+                  id="veteranNo"
+                  value="not-veteran"
+                />
+                <label class="form-check-label" for="veteranNo"
+                  >I am not a protected veteran</label
+                >
+              </div>
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name="veteranStatus"
+                  id="veteranYes"
+                  value="veteran"
+                />
+                <label class="form-check-label" for="veteranYes"
+                  >I am a protected veteran</label
+                >
+              </div>
+              <div class="ps-4 mt-2" id="veteranTypes" style="display: none">
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    name="veteranType"
+                    id="veteranDisabled"
+                    value="disabled"
+                  />
+                  <label class="form-check-label" for="veteranDisabled"
+                    >Disabled Veteran</label
+                  >
+                </div>
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    name="veteranType"
+                    id="veteranSeparated"
+                    value="separated"
+                  />
+                  <label class="form-check-label" for="veteranSeparated"
+                    >Recently Separated Veteran (within last 3 years)</label
+                  >
+                </div>
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    name="veteranType"
+                    id="veteranActive"
+                    value="active"
+                  />
+                  <label class="form-check-label" for="veteranActive"
+                    >Active Duty Wartime or Campaign Badge Veteran</label
+                  >
+                </div>
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    name="veteranType"
+                    id="veteranMedal"
+                    value="medal"
+                  />
+                  <label class="form-check-label" for="veteranMedal"
+                    >Armed Forces Service Medal Veteran</label
+                  >
+                </div>
+              </div>
+              <div class="form-check mt-2">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name="veteranStatus"
+                  id="veteranNotSay"
+                  value="prefer-not-to-say"
+                />
+                <label class="form-check-label" for="veteranNotSay"
+                  >Prefer Not to Say</label
+                >
+              </div>
+            </div>
+
+            <h5 class="mb-3">Disability Status (as defined by the ADA)</h5>
+            <div class="mb-4">
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name="disabilityStatus"
+                  id="disabilityYes"
+                  value="yes"
+                />
+                <label class="form-check-label" for="disabilityYes"
+                  >Yes, I have a disability (or have had one in the past)</label
+                >
+              </div>
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name="disabilityStatus"
+                  id="disabilityNo"
+                  value="no"
+                />
+                <label class="form-check-label" for="disabilityNo"
+                  >No, I do not have a disability</label
+                >
+              </div>
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name="disabilityStatus"
+                  id="disabilityNotSay"
+                  value="prefer-not-to-say"
+                />
+                <label class="form-check-label" for="disabilityNotSay"
+                  >Prefer Not to Say</label
+                >
+              </div>
+            </div>
+
+            <div class="alert alert-info mt-4">
+              <h6>Notice to Applicants</h6>
+              <p class="mb-0">
+                Renarc Group is an Equal Opportunity Employer. We comply with
+                the Americans with Disabilities Act (ADA) and all other
+                applicable laws. If you require a reasonable accommodation in
+                completing the application or during the hiring process, please
+                contact us at info@renarcgroup.com so that we may assist you.
+              </p>
+            </div>
+
+            <div class="d-flex justify-content-between mt-4">
+              <button class="btn btn-outline-primary" onclick="prevStep(3)">
+                <i class="bi bi-arrow-left me-2"></i>Back
+              </button>
+              <button class="btn btn-primary" onclick="validateStep(3)">
+                Continue <i class="bi bi-arrow-right ms-2"></i>
+              </button>
+            </div>
+          </div>
+
+          <!-- Step 4: Review and Submit -->
+          <div class="step" id="step4">
+            <h3 class="mb-4">Review & Submit</h3>
+
+            <div class="review-section mb-4">
+              <h5 class="mb-3">Please Review Your Information</h5>
+
+              <div class="card mb-3">
+                <div class="card-header bg-light">
+                  <h6 class="mb-0">Personal Information</h6>
+                </div>
+                <div class="card-body">
+                  <div class="row">
+                    <div class="col-md-6">
+                      <p>
+                        <strong>Legal Name:</strong>
+                        <span id="review-legal-name"></span>
+                      </p>
+                      <p>
+                        <strong>Preferred Name:</strong>
+                        <span id="review-preferred-name"></span>
+                      </p>
+                      <p>
+                        <strong>Email:</strong> <span id="review-email"></span>
+                      </p>
+                      <p>
+                        <strong>Phone:</strong>
+                        <span id="review-phone"></span> (<span
+                          id="review-phone-type"
+                        ></span
+                        >)
+                      </p>
+                    </div>
+                    <div class="col-md-6">
+                      <p>
+                        <strong>Address:</strong>
+                        <span id="review-address"></span>
+                      </p>
+                      <p>
+                        <strong>City, State, ZIP:</strong>
+                        <span id="review-location"></span>
+                      </p>
+                      <p>
+                        <strong>Preferred Contact:</strong>
+                        <span id="review-contact-method"></span>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card mb-3">
+                <div class="card-header bg-light">
+                  <h6 class="mb-0">Work Eligibility & Preferences</h6>
+                </div>
+                <div class="card-body">
+                  <div class="row">
+                    <div class="col-md-6">
+                      <p>
+                        <strong>Work Authorization:</strong>
+                        <span id="review-work-auth"></span>
+                      </p>
+                      <p>
+                        <strong>Visa Sponsorship Needed:</strong>
+                        <span id="review-visa"></span>
+                      </p>
+                      <p>
+                        <strong>Over 18:</strong> <span id="review-age"></span>
+                      </p>
+                      <p>
+                        <strong>Driver's License:</strong>
+                        <span id="review-license"></span>
+                      </p>
+                    </div>
+                    <div class="col-md-6">
+                      <p>
+                        <strong>Available Start Date:</strong>
+                        <span id="review-start-date"></span>
+                      </p>
+                      <p>
+                        <strong>Willing to Relocate:</strong>
+                        <span id="review-relocate"></span>
+                      </p>
+                      <p>
+                        <strong>Willing to Travel:</strong>
+                        <span id="review-travel"></span>
+                      </p>
+                      <p>
+                        <strong>Willing to Work Overtime:</strong>
+                        <span id="review-overtime"></span>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card mb-3">
+                <div class="card-header bg-light">
+                  <h6 class="mb-0">Education</h6>
+                </div>
+                <div class="card-body" id="review-education">
+                  <!-- Education entries will be added here dynamically -->
+                </div>
+              </div>
+
+              <div class="card mb-3">
+                <div class="card-header bg-light">
+                  <h6 class="mb-0">Work Experience</h6>
+                </div>
+                <div class="card-body" id="review-experience">
+                  <!-- Experience entries will be added here dynamically -->
+                </div>
+              </div>
+
+              <div class="card mb-3">
+                <div class="card-header bg-light">
+                  <h6 class="mb-0">Certifications & Skills</h6>
+                </div>
+                <div class="card-body">
+                  <div id="review-certifications">
+                    <!-- Certification entries will be added here dynamically -->
+                  </div>
+                  <p>
+                    <strong>Technical Skills:</strong>
+                    <span id="review-tech-skills"></span>
+                  </p>
+                  <p>
+                    <strong>Soft Skills:</strong>
+                    <span id="review-soft-skills"></span>
+                  </p>
+                  <p>
+                    <strong>Languages:</strong>
+                    <span id="review-languages"></span>
+                  </p>
+                </div>
+              </div>
+
+              <div class="card mb-3">
+                <div class="card-header bg-light">
+                  <h6 class="mb-0">EEO Information</h6>
+                </div>
+                <div class="card-body">
+                  <p>
+                    <strong>Gender:</strong> <span id="review-gender"></span>
+                  </p>
+                  <p>
+                    <strong>Ethnicity:</strong>
+                    <span id="review-ethnicity"></span>
+                  </p>
+                  <p>
+                    <strong>Veteran Status:</strong>
+                    <span id="review-veteran"></span>
+                  </p>
+                  <p>
+                    <strong>Disability Status:</strong>
+                    <span id="review-disability"></span>
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="alert alert-info mb-4">
+              <h5>Authorization & Certification</h5>
+              <p>
+                I certify that the information provided in this application is
+                true and complete to the best of my knowledge. I understand that
+                any false statements may disqualify me from employment or result
+                in termination. I authorize the verification of any or all
+                information provided.
+              </p>
+            </div>
+
+            <div class="mb-4">
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  id="certification"
+                  required
+                />
+                <label
+                  class="form-check-label required-field"
+                  for="certification"
+                >
+                  I certify that the information provided is true and complete
+                </label>
+              </div>
+            </div>
+
+            <div class="d-flex justify-content-between">
+              <button class="btn btn-outline-primary" onclick="prevStep(4)">
+                <i class="bi bi-arrow-left me-2"></i>Back
+              </button>
+              <button class="btn btn-primary" onclick="submitApplication()">
+                Submit Application
+              </button>
+            </div>
+          </div>
+
+          <!-- Success Message (initially hidden) -->
+          <div
+            id="success-message"
+            class="text-center py-5"
+            style="display: none"
+          >
+            <div class="success-checkmark mb-4">
+              <i
+                class="bi bi-check-circle-fill text-success"
+                style="font-size: 4rem"
+              ></i>
+            </div>
+            <h3 class="mb-3 text-success">
+              Application Submitted Successfully!
+            </h3>
+            <p class="text-muted mb-4">
+              Thank you for applying to RenArc Group. We have received your
+              application and will review it carefully.
+            </p>
+            <p class="mb-4">
+              A confirmation email with your responses has been sent to
+              <span id="success-email" class="fw-bold"></span>
+            </p>
+
+            <div class="d-flex justify-content-center gap-3 flex-wrap">
+              <button class="btn btn-primary" onclick="downloadPDF()">
+                <i class="bi bi-download me-2"></i>Download Your Responses (PDF)
+              </button>
+              <a href="../careers/careers.html" class="btn btn-outline-primary">
+                <i class="bi bi-arrow-left me-2"></i>Return to Careers Page
+              </a>
+            </div>
+
+            <div class="mt-4 text-muted">
+              <small
+                >Your application has also been forwarded to our hiring team for
+                review.</small
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="footer">
+      <footer class="footerbg py-5">
+        <div class="container">
+          <!-- Main Footer Content - 4 Perfectly Spaced Columns -->
+          <div class="row justify-content-between px-lg-4">
+            <!-- Added horizontal padding -->
+            <!-- First Column -->
+            <div class="col-md-auto col-6 text-center text-md-start">
+              <h3 class="text-light">Working Hours</h3>
+              <p class="text-light mb-3">
+                <i class="bi bi-calendar me-2"></i> Mon-Fri, 9:00am-6:00pm
+              </p>
+              <h3 class="text-light">Coverage Area</h3>
+              <p class="text-light">
+                <i class="bi bi-geo-alt me-2"></i> Central Florida
+              </p>
+              <p class="text-light">
+                <i class="bi bi-geo-alt me-2"></i> South Florida
+              </p>
+            </div>
+
+            <!-- Second Column -->
+            <div class="col-md-auto col-6 text-center text-md-start">
+              <h3 class="text-light">Contact Us</h3>
+              <p class="text-light">
+                <i
+                  class="bi bi-envelope me-2 contact-icon email-icon"
+                  data-email="info@renarcgroup.com"
+                ></i>
+                info@renarcgroup.com
+              </p>
+              <p class="text-light">
+                <i
+                  class="bi bi-envelope me-2 contact-icon email-icon"
+                  data-email="carrier@renarcgroup.com"
+                ></i>
+                carrier@renarcgroup.com
+              </p>
+              <p class="text-light mb-3">
+                <i
+                  class="bi bi-telephone me-2 contact-icon phone-icon"
+                  data-phone="+17287772517"
+                ></i>
+                +1 (728)-777-2517
+              </p>
+              <div
+                class="socials text-light d-flex gap-3 justify-content-center justify-content-md-start"
+              >
+                <a
+                  href="https://www.facebook.com/profile.php?id=61578246749694&notif_id=1752200342615326&notif_t=follower_invite&ref=notif"
+                  target="_self"
+                  rel="noopener noreferrer"
+                  class="text-light"
+                >
+                  <i class="bi bi-facebook"></i>
+                </a>
+                <a
+                  href="https://www.instagram.com/renarcgroup/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="text-light"
+                >
+                  <i class="bi bi-instagram"></i>
+                </a>
+                <a
+                  href="https://linkedin.com/company/yourpage"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="text-light"
+                >
+                  <i class="bi bi-linkedin"></i>
+                </a>
+                <a
+                  href="https://tiktok.com/@yourpage"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="text-light"
+                >
+                  <i class="bi bi-tiktok"></i>
+                </a>
+              </div>
+            </div>
+
+            <!-- Third Column -->
+            <div class="col-md-3 col-6">
+              <div
+                class="h-100 d-flex flex-column align-items-center align-items-md-start text-center text-md-start px-2"
+              >
+                <h3 class="text-light">Let's talk</h3>
+                <p
+                  class="text-light mw-100"
+                  style="max-width: 280px; width: 100%"
+                >
+                  Ready to bring your vision to life? Let's connect and make it
+                  happen.
+                </p>
+                <a
+                  href="../form/form.html"
+                  class="btn text-gold mt-2 px-4 py-2 fw-bold hover-bounce align-self-center align-self-md-start"
+                  >Schedule Now</a
+                >
+              </div>
+            </div>
+
+            <!-- Fourth Column - Logo -->
+            <div
+              class="col-md-auto col-6 d-flex align-items-center justify-content-center"
+            >
+              <a class="navbar-brand" href="../../index.html">
+                <img
+                  src="../../images/logo.png"
+                  alt="RenArc Logo"
+                  style="height: 150px; width: auto"
+                />
+              </a>
+            </div>
+          </div>
+
+          <!-- Divider Line -->
+          <hr class="my-4 mx-auto bg-secondary" style="max-width: 95%" />
+
+          <!-- Footer Bottom -->
+          <div class="row align-items-center">
+            <div
+              class="col-md-4 text-center text-md-start mb-3 mb-md-0 text-secondary"
+            >
+              &copy; 2025 RenArc Group. All rights reserved.
+            </div>
+            <div class="col-md-4">
+              <div class="d-flex flex-wrap justify-content-center gap-3">
+                <a href="#" class="text-decoration-none text-secondary"
+                  >Privacy Policy</a
+                >
+                <a href="#" class="text-decoration-none text-secondary"
+                  >Terms of Service</a
+                >
+                <a href="#" class="text-decoration-none text-secondary">FAQ</a>
+              </div>
+            </div>
+            <div
+              class="col-md-4 text-center text-md-end mt-3 mt-md-0 text-secondary"
+            >
+              Developed by Luka Varazi
+            </div>
+          </div>
+        </div>
+
+        <!-- Back to top button -->
+        <a
+          href="#"
+          class="back-to-top position-fixed bottom-0 end-0 m-4 p-2 d-flex align-items-center justify-content-center"
+        >
+          <i
+            class="bi bi-arrow-up-square"
+            style="color: #d4af37; font-size: 1.8rem"
+          ></i>
+        </a>
+      </footer>
+    </section>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+      crossorigin="anonymous"
+    ></script>
+    <script src="../../global/global.js"></script>
+    <script src="job-app.js"></script>
+  </body>
+</html>
